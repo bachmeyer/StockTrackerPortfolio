@@ -1,0 +1,14 @@
+﻿
+
+<form class="vertical-center" ng-submit="controller.register(user)">
+
+    <h1 style="color:lightgreen"> Create New Account</h1>
+    <!--the username below must be capitalized for csharp conversion-->
+    <input ng-model="user.userName" placeholder="User Name" class="form-control" />
+    <input ng-model="user.email" placeholder="Email" class="form-control" />
+    <input ng-model="user.password" placeholder="Password" type="password" class="form-control" />
+    <input ng-model="user.confirmPassword" placeholder="Confirm Password" type="password" class="form-control" />
+    <input type="submit" class="form-control btn btn-success" value="Register" />
+
+    <p>Log in to an existing account by <a href="#/login">Clicking Here</a></p>
+</form>

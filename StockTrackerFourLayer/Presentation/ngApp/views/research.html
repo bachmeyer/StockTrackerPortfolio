@@ -1,0 +1,11 @@
+﻿<div class="search search-{{search ? 'flex-start' : 'center'}}">
+
+    <input ng-model="search" placeholder="Search" class="form-control" ng-model-option="{debounce: 300}" ng-change="controller.updateStocks(search)" />
+    <ul>
+        <li ng-repeat="stock in controller.stocks">
+            {{stock.ticker}} {{stock.name}} {{stock.price | currency}}
+            {{stock.price - stock.openPrice | currency}}
+        </li>
+    </ul>
+</div>
+
